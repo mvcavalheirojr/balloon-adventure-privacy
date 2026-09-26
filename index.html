@@ -3,222 +3,268 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Privacy Policy — Balloon Adventure</title>
+  <title>Balloon Adventure — Privacy Policy</title>
+  <meta name="description" content="Privacy policy of the Balloon Adventure game (Android) in 7 languages.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@500;700&display=swap">
   <style>
-    body { font-family: sans-serif; max-width: 720px; margin: 40px auto; padding: 0 20px; color: #222; line-height: 1.7; }
-    h1 { color: #c0392b; } h2 { color: #444; margin-top: 2em; }
-    footer { margin-top: 3em; font-size: 0.85em; color: #888; }
-    .lang { font-size: 0.85em; color: #888; margin-bottom: 2em; }
+    :root {
+      --sky-1: #3a86e2; --sky-2: #62a8f0; --sky-3: #9ccaf6; --sky-4: #d4ecfb;
+      --grass-1: #5aa04a; --grass-2: #3e8038; --stone: #7d7068;
+      --paper: #f3e6c8; --paper-hi: #fff8e6; --paper-lo: #d8c49c;
+      --ink: #2a1d14; --muted: #6e5a44; --link: #1f5fb8; --accent: #e57a2e;
+    }
+    * { box-sizing: border-box; }
+    html { background: var(--sky-4); scroll-behavior: smooth; }
+    body {
+      margin: 0; color: var(--ink); line-height: 1.65; font-size: 17px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans", "Noto Sans Devanagari", Arial, sans-serif;
+      background: linear-gradient(180deg, var(--sky-1) 0 90px, var(--sky-2) 90px 190px, var(--sky-3) 190px 300px, var(--sky-4) 300px);
+    }
+    header { text-align: center; padding: 28px 16px 20px; color: #fff8e6; }
+    header img { width: 84px; height: 129px; image-rendering: pixelated; display: block; margin: 0 auto 10px; }
+    h1, h2, .sub, nav a, footer { font-family: "Pixelify Sans", "Courier New", monospace; }
+    h1 { margin: 0; font-size: clamp(28px, 7vw, 40px); line-height: 1.05; text-wrap: balance;
+      text-shadow: 2px 0 0 var(--ink), -2px 0 0 var(--ink), 0 2px 0 var(--ink), 0 -2px 0 var(--ink), 3px 4px 0 rgba(0,0,0,.35); }
+    .sub { margin: 8px 0 0; font-size: 18px; text-shadow: 1px 1px 0 var(--ink); }
+    nav { display: flex; gap: 8px; justify-content: center; margin: 16px auto 0; flex-wrap: wrap; max-width: 760px; }
+    nav a { font-weight: 700; color: #fff; text-decoration: none; padding: 7px 14px; font-size: 16px;
+      background: var(--grass-1); border: 2px solid var(--ink);
+      box-shadow: inset 0 2px 0 rgba(255,255,255,.4), inset 0 -3px 0 rgba(0,0,0,.25), 3px 3px 0 rgba(0,0,0,.35); }
+    nav a:focus-visible, a:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+    main { max-width: 760px; margin: 0 auto; padding: 0 16px 48px; display: flex; flex-direction: column; gap: 28px; }
+    article { background: var(--paper); border: 2px solid var(--ink); padding: 20px 22px 18px; scroll-margin-top: 12px;
+      box-shadow: inset 0 2px 0 var(--paper-hi), inset 0 -4px 0 var(--paper-lo), 5px 5px 0 rgba(42, 29, 20, .35); }
+    h2 { margin: 0; font-size: 26px; }
+    h3 { font-size: 18px; margin: 24px 0 4px; padding-bottom: 4px; border-bottom: 2px solid var(--paper-lo); }
+    p, ul { margin: 8px 0; max-width: 65ch; }
+    ul { padding-left: 22px; }
+    li { margin: 4px 0; }
+    a { color: var(--link); }
+    .updated { font-size: 14px; color: var(--muted); }
+    .mail { font-family: ui-monospace, Menlo, monospace; user-select: all; word-break: break-all; }
+    .top { text-align: right; margin: 12px 0 0; }
+    .top a { text-decoration: none; font-weight: 700; }
+    footer { text-align: center; padding: 24px 16px 32px; color: #fff;
+      background: linear-gradient(180deg, var(--grass-1) 0 6px, var(--grass-2) 6px); border-top: 2px solid var(--ink); }
   </style>
 </head>
-<body>
-  <h1>🎈 Balloon Adventure — Privacy Policy / Política de Privacidade</h1>
-  <p class="lang">
-    <a href="#pt">Português</a> · <a href="#en">English</a> · <a href="#es">Español</a> ·
-    <a href="#fr">Français</a> · <a href="#ru">Русский</a> · <a href="#id">Bahasa Indonesia</a> · <a href="#hi">हिन्दी</a>
-  </p>
+<body id="top">
 
-  <!-- ── PORTUGUÊS ── -->
-  <section id="pt">
-  <h2>Português</h2>
-  <p><strong>Última atualização:</strong> 2 de julho de 2026</p>
+<header>
+  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAArCAYAAABrcuiBAAADqUlEQVR4nK2Y7UsUQRzHv3veaR5BktchtNmiB4KeaSBKKdULC08q6j+IXvhCopfhPxD0LgjpRX9ARK8kxbPUqOgBUyjzCk+OY5ML7biiB7pI17YX64wzO7O7c+T3zc3sDL/Pfmd+87CnQVF63LD92gtFU1OJE1YF3bw8iDOxGqQ/5HFuMAXLzCKd/YhUMoHxe3cxAqdfENi3UY8b9vtrFxE2WmCZWecNjRYAoHVEIgCAjafjmK9rxtBExhcqbSCusrdHuOAExj6zVhYRbuuiUAA4+vw3ALlbYUhZV5wTBUU6e7H59gXe9NVuu4XthoZUYY9KfwSAtbIIAJiYnAIAaPv2I9LZ67TllnDnbFJItpArBoVNLrzjng92HfF0NnA4xtUfrv3EsVgUVm5J6EuBxB3RmViNJyBIZ1MDtOx2GWJhbFKwSn/IC8/IcNI+mZzQh7hkocKQAsD4ZJqrV8UP8rBP4gtsrfLA2dpD0penQDYpUq1N0s5Bsr9/peWBlkZafjk3R8thPW7YixeasMcnKdiEkbkDxMRh1V0fxfGeJIYmYEuH1EtesEqkDAyC/S2tCc9elcreQL+Au+FMAKYzOSGwtbIopL9MMncvzXVafv1lx2moUDS1jrE8TmvfHMinPCamZzmQbI259XDtJ1efW/1My8d7eugpIp3DqsZEIIDIy93WmintHwKcY6RjbGc4U0ke6F7UMli4qZVr666P0jJ7RnIOrfcL0sB+a4z22V7o7NwBQDjRztUp0O1y2q7zBfglCruzuG8AwhwSl+5hrURkON3uBCBxSaCsS3LIAvyeCTgbtdtdONEuvd8IDtmhZV36zSO7URN3Xpcp6bIoFE2t7fp95023L0hEbnfAztyRE354WfO8ufnupeQWNvWxBIAfVqLRH3sB7Cx02byxCryXvumrRfXJc3Req3TnrNx8+wIAMF/XDMBx5zVvykACBYDMlX5sFfIc8FWpjHCiHVZuCcPLTqigm3fg8VQomlqhaGrJ0RlU6U3UGQAORvoFxVM6D/W4Yd9otjCVXRXaXn8p49KBX4EfOxUBd1PKwOUf/M1bdprvClB1qFTl+32oxw27MbYRGOSxHYHTzxA+XtxSWhaNsQ2slqo9+5B2lSxV+kxmoWxQr+f/DXQHJ6oUpgzU44Z9ov+UZ/uzmSe751CPG/bV/ijM9TKMBu/fWzNlJajSOgyCmevqa1IJGAQzGqLBQbalPIfnk97tDzLqfwxVlKVebZVk6T+8Wfy7J15GUwAAAABJRU5ErkJggg==" alt="">
+  <h1>Balloon Adventure</h1>
+  <p class="sub">Privacy Policy · Política de Privacidade</p>
+  <nav aria-label="Idioma / Language"><a href="#pt" hreflang="pt-BR">Português</a><a href="#en" hreflang="en">English</a><a href="#es" hreflang="es">Español</a><a href="#hi" hreflang="hi">हिन्दी</a><a href="#id" hreflang="id">Indonesia</a><a href="#ru" hreflang="ru">Русский</a><a href="#fr" hreflang="fr">Français</a></nav>
+</header>
 
-  <h2>1. Dados coletados</h2>
-  <p>O Balloon Adventure <strong>não coleta dados pessoais identificáveis</strong>. O único dado armazenado localmente é o progresso do jogador (pontuação máxima, preferências de skin), gravado exclusivamente no dispositivo via <code>user://save.cfg</code>.</p>
+<main>
+<article id="pt" lang="pt-BR">
+  <h2>Política de Privacidade</h2>
+  <p class="updated">Última atualização: 26 de setembro de 2026</p>
+  <p>Esta política explica como o jogo <strong>Balloon Adventure</strong> (o "App"), desenvolvido por Marcos Valdecir Cavalheiro Junior ("nós"), trata as informações de quem joga. Resumo: nós não coletamos dados pessoais. Os anúncios vêm do Google AdMob, que pode coletar alguns dados do aparelho, como descrito abaixo.</p>
+  <h3>1. Dados pessoais</h3>
+  <p>Não pedimos cadastro nem login, e não coletamos, guardamos ou compartilhamos seu nome, e-mail, telefone, contatos, fotos ou localização.</p>
+  <h3>2. Anúncios (Google AdMob)</h3>
+  <p>O App mostra anúncios do <strong>Google AdMob</strong>. Para exibir e medir anúncios e evitar fraudes, o SDK do AdMob pode coletar:</p>
+  <ul><li>o ID de publicidade do aparelho;</li><li>o endereço IP e a localização aproximada derivada dele (país ou região);</li><li>informações técnicas do aparelho (modelo, sistema, idioma);</li><li>interações com os anúncios (exibição e toque).</li></ul>
+  <p>Esses dados são tratados pelo Google conforme a <a href="https://policies.google.com/privacy" rel="noopener">Política de Privacidade do Google</a> e as <a href="https://policies.google.com/technologies/partner-sites" rel="noopener">regras de uso de dados de parceiros</a>. Você pode redefinir ou excluir seu ID de publicidade em Configurações do Android › Google › Anúncios.</p>
+  <h3>3. Consentimento</h3>
+  <p>Se você estiver no Espaço Econômico Europeu, no Reino Unido ou na Suíça, o App mostra, antes de qualquer anúncio, o formulário de consentimento do Google (Plataforma de Mensagens do Usuário, UMP). Ali você escolhe se aceita anúncios personalizados. Se recusar, os anúncios continuam, mas sem personalização.</p>
+  <p>Você pode rever essa escolha a qualquer momento em <em>Ajustes › Opções de privacidade</em>. Na primeira abertura, o App também mostra um aviso curto com o link para esta página; esse aviso é só informativo e não substitui o formulário do Google.</p>
+  <h3>4. O que fica no seu aparelho</h3>
+  <p>Para o jogo funcionar, guardamos só no seu aparelho: recorde e últimas pontuações, moedas, criaturas e mundos descobertos no álbum, missões diárias e sequência de dias jogados, balões desbloqueados, configurações (música, sons e idioma) e a confirmação do aviso de privacidade. Nada disso é enviado para nós, e tudo é apagado quando você desinstala o App ou limpa os dados dele nas configurações do Android.</p>
+  <h3>5. Compartilhar e avaliar</h3>
+  <p>O botão <em>Compartilhar</em> copia para a área de transferência um texto com sua pontuação, para você colar onde quiser; nada é enviado para nós. O botão <em>Avaliar</em> abre a página do App no Google Play.</p>
+  <h3>6. Compras no App</h3>
+  <p>No momento o App não vende nada. Se isso mudar, os pagamentos serão feitos só pelo Google Play, sem que recebamos seus dados de pagamento, e esta política será atualizada.</p>
+  <h3>7. Permissões do Android</h3>
+  <ul><li><strong>Internet</strong>: para carregar os anúncios e o formulário de consentimento.</li><li><strong>Vibração</strong>: para a vibração curta ao tocar e ao bater.</li></ul>
+  <h3>8. Crianças</h3>
+  <p>Não coletamos dados pessoais de ninguém, inclusive de crianças. Os anúncios são do Google AdMob e seguem as políticas do Google para anúncios.</p>
+  <h3>9. Alterações</h3>
+  <p>Podemos atualizar esta política. A data no topo sempre indica a versão mais recente.</p>
+  <h3>10. Contato</h3>
+  <p>Dúvidas sobre privacidade: <span class="mail">marcosvcavalheirojr@gmail.com</span></p>
+  <p class="top"><a href="#top">↑</a></p>
+</article>
+<article id="en" lang="en">
+  <h2>Privacy Policy</h2>
+  <p class="updated">Last updated: September 26, 2026</p>
+  <p>This policy explains how <strong>Balloon Adventure</strong> (the "App"), developed by Marcos Valdecir Cavalheiro Junior ("we"), handles information about its players. In short: we do not collect personal data. Ads come from Google AdMob, which may collect some device data as described below.</p>
+  <h3>1. Personal data</h3>
+  <p>We do not require sign-up or login, and we do not collect, store or share your name, email, phone number, contacts, photos or location.</p>
+  <h3>2. Advertising (Google AdMob)</h3>
+  <p>The App shows ads from <strong>Google AdMob</strong>. To serve and measure ads and prevent fraud, the AdMob SDK may collect:</p>
+  <ul><li>the device's advertising ID;</li><li>IP address and the approximate location derived from it (country or region);</li><li>technical device information (model, operating system, language);</li><li>interactions with ads (views and taps).</li></ul>
+  <p>This data is handled by Google under the <a href="https://policies.google.com/privacy" rel="noopener">Google Privacy Policy</a> and its <a href="https://policies.google.com/technologies/partner-sites" rel="noopener">partner data policies</a>. You can reset or delete your advertising ID in Android Settings › Google › Ads.</p>
+  <h3>3. Consent</h3>
+  <p>If you are in the European Economic Area, the United Kingdom or Switzerland, before any ad the App shows Google's consent form (User Messaging Platform, UMP), where you choose whether to allow personalized ads. If you decline, ads still appear but are not personalized.</p>
+  <p>You can review this choice at any time in <em>Settings › Privacy options</em>. On first launch the App also shows a short notice linking to this page; that notice is informational only and does not replace Google's form.</p>
+  <h3>4. Data stored on your device</h3>
+  <p>For the game to work, we store on your device only: best and recent scores, coins, creatures and worlds found in the album, daily missions and play streak, unlocked balloons, settings (music, sound and language) and your privacy-notice confirmation. None of it is sent to us, and it is all deleted when you uninstall the App or clear its data in Android settings.</p>
+  <h3>5. Sharing and rating</h3>
+  <p>The <em>Share</em> button copies a text with your score to the clipboard so you can paste it wherever you like; nothing is sent to us. The <em>Rate</em> button opens the App's page on Google Play.</p>
+  <h3>6. In-app purchases</h3>
+  <p>The App does not sell anything at the moment. If that changes, payments will go only through Google Play, we will not receive your payment details, and this policy will be updated.</p>
+  <h3>7. Android permissions</h3>
+  <ul><li><strong>Internet</strong>: to load ads and the consent form.</li><li><strong>Vibrate</strong>: for short vibrations on tap and on collision.</li></ul>
+  <h3>8. Children</h3>
+  <p>We do not collect personal data from anyone, including children. Ads come from Google AdMob and follow Google's advertising policies.</p>
+  <h3>9. Changes</h3>
+  <p>We may update this policy. The date at the top always shows the latest version.</p>
+  <h3>10. Contact</h3>
+  <p>Privacy questions: <span class="mail">marcosvcavalheirojr@gmail.com</span></p>
+  <p class="top"><a href="#top">↑</a></p>
+</article>
+<article id="es" lang="es">
+  <h2>Política de Privacidad</h2>
+  <p class="updated">Última actualización: 26 de septiembre de 2026</p>
+  <p>Esta política explica cómo el juego <strong>Balloon Adventure</strong> (la "App"), desarrollado por Marcos Valdecir Cavalheiro Junior ("nosotros"), trata la información de quienes juegan. En resumen: no recopilamos datos personales. Los anuncios vienen de Google AdMob, que puede recopilar algunos datos del dispositivo, como se describe abajo.</p>
+  <h3>1. Datos personales</h3>
+  <p>No pedimos registro ni inicio de sesión, y no recopilamos, guardamos ni compartimos tu nombre, correo, teléfono, contactos, fotos o ubicación.</p>
+  <h3>2. Anuncios (Google AdMob)</h3>
+  <p>La App muestra anuncios de <strong>Google AdMob</strong>. Para mostrar y medir anuncios y evitar fraudes, el SDK de AdMob puede recopilar:</p>
+  <ul><li>el ID de publicidad del dispositivo;</li><li>la dirección IP y la ubicación aproximada derivada de ella (país o región);</li><li>información técnica del dispositivo (modelo, sistema, idioma);</li><li>interacciones con los anuncios (visualización y toque).</li></ul>
+  <p>Google trata estos datos según la <a href="https://policies.google.com/privacy" rel="noopener">Política de Privacidad de Google</a> y sus <a href="https://policies.google.com/technologies/partner-sites" rel="noopener">normas sobre datos de socios</a>. Puedes restablecer o eliminar tu ID de publicidad en Ajustes de Android › Google › Anuncios.</p>
+  <h3>3. Consentimiento</h3>
+  <p>Si estás en el Espacio Económico Europeo, el Reino Unido o Suiza, antes de cualquier anuncio la App muestra el formulario de consentimiento de Google (User Messaging Platform, UMP), donde eliges si aceptas anuncios personalizados. Si los rechazas, los anuncios siguen, pero sin personalización.</p>
+  <p>Puedes revisar esa elección cuando quieras en <em>Ajustes › Opciones de privacidad</em>. En la primera apertura la App también muestra un aviso breve con el enlace a esta página; ese aviso es solo informativo y no sustituye el formulario de Google.</p>
+  <h3>4. Lo que se guarda en tu dispositivo</h3>
+  <p>Para que el juego funcione, guardamos solo en tu dispositivo: récord y últimas puntuaciones, monedas, criaturas y mundos descubiertos en el álbum, misiones diarias y racha de días, globos desbloqueados, configuración (música, sonidos e idioma) y la confirmación del aviso de privacidad. Nada se nos envía, y todo se borra al desinstalar la App o borrar sus datos en los ajustes de Android.</p>
+  <h3>5. Compartir y valorar</h3>
+  <p>El botón <em>Compartir</em> copia al portapapeles un texto con tu puntuación para que lo pegues donde quieras; no se nos envía nada. El botón <em>Valorar</em> abre la página de la App en Google Play.</p>
+  <h3>6. Compras en la App</h3>
+  <p>Por ahora la App no vende nada. Si eso cambia, los pagos se harán solo por Google Play, no recibiremos tus datos de pago y esta política se actualizará.</p>
+  <h3>7. Permisos de Android</h3>
+  <ul><li><strong>Internet</strong>: para cargar los anuncios y el formulario de consentimiento.</li><li><strong>Vibración</strong>: para la vibración corta al tocar y al chocar.</li></ul>
+  <h3>8. Niños</h3>
+  <p>No recopilamos datos personales de nadie, incluidos los niños. Los anuncios son de Google AdMob y siguen las políticas publicitarias de Google.</p>
+  <h3>9. Cambios</h3>
+  <p>Podemos actualizar esta política. La fecha de arriba siempre indica la versión más reciente.</p>
+  <h3>10. Contacto</h3>
+  <p>Dudas sobre privacidad: <span class="mail">marcosvcavalheirojr@gmail.com</span></p>
+  <p class="top"><a href="#top">↑</a></p>
+</article>
+<article id="hi" lang="hi">
+  <h2>गोपनीयता नीति</h2>
+  <p class="updated">अंतिम अपडेट: 26 सितंबर 2026</p>
+  <p>यह नीति बताती है कि गेम <strong>Balloon Adventure</strong> ("ऐप"), जिसे Marcos Valdecir Cavalheiro Junior ("हम") ने बनाया है, खिलाड़ियों की जानकारी को कैसे संभालता है। सार: हम व्यक्तिगत डेटा एकत्र नहीं करते। विज्ञापन Google AdMob से आते हैं, जो नीचे बताए अनुसार डिवाइस का कुछ डेटा एकत्र कर सकता है।</p>
+  <h3>1. व्यक्तिगत डेटा</h3>
+  <p>हम साइन-अप या लॉगिन नहीं माँगते, और आपका नाम, ईमेल, फ़ोन, संपर्क, फ़ोटो या स्थान एकत्र, संग्रहीत या साझा नहीं करते।</p>
+  <h3>2. विज्ञापन (Google AdMob)</h3>
+  <p>ऐप <strong>Google AdMob</strong> के विज्ञापन दिखाता है। विज्ञापन दिखाने, मापने और धोखाधड़ी रोकने के लिए AdMob SDK एकत्र कर सकता है:</p>
+  <ul><li>डिवाइस का विज्ञापन ID;</li><li>IP पता और उससे निकाला गया अनुमानित स्थान (देश या क्षेत्र);</li><li>डिवाइस की तकनीकी जानकारी (मॉडल, सिस्टम, भाषा);</li><li>विज्ञापनों के साथ इंटरैक्शन (देखना और टैप)।</li></ul>
+  <p>यह डेटा Google द्वारा <a href="https://policies.google.com/privacy" rel="noopener">Google गोपनीयता नीति</a> और <a href="https://policies.google.com/technologies/partner-sites" rel="noopener">भागीदार डेटा नीतियों</a> के अनुसार संभाला जाता है। आप Android सेटिंग्स › Google › विज्ञापन में अपना विज्ञापन ID रीसेट या हटा सकते हैं।</p>
+  <h3>3. सहमति</h3>
+  <p>यदि आप यूरोपीय आर्थिक क्षेत्र, यूनाइटेड किंगडम या स्विट्ज़रलैंड में हैं, तो किसी भी विज्ञापन से पहले ऐप Google का सहमति फ़ॉर्म (User Messaging Platform, UMP) दिखाता है, जहाँ आप चुनते हैं कि वैयक्तिकृत विज्ञापन स्वीकार हैं या नहीं। मना करने पर भी विज्ञापन दिखते हैं, पर वैयक्तिकृत नहीं होते।</p>
+  <p>आप यह पसंद कभी भी <em>सेटिंग्स › गोपनीयता विकल्प</em> में बदल सकते हैं। पहली बार खोलने पर ऐप इस पेज के लिंक के साथ एक छोटी सूचना भी दिखाता है; वह सूचना केवल जानकारी के लिए है और Google के फ़ॉर्म की जगह नहीं लेती।</p>
+  <h3>4. आपके डिवाइस पर क्या रहता है</h3>
+  <p>गेम चलाने के लिए हम केवल आपके डिवाइस पर रखते हैं: रिकॉर्ड और हाल के स्कोर, सिक्के, एल्बम में खोजे गए जीव और दुनियाएँ, दैनिक मिशन और लगातार खेले गए दिन, अनलॉक किए गुब्बारे, सेटिंग्स (संगीत, ध्वनि, भाषा) और गोपनीयता सूचना की पुष्टि। इनमें से कुछ भी हमें नहीं भेजा जाता, और ऐप अनइंस्टॉल करने या Android सेटिंग्स में उसका डेटा साफ़ करने पर सब मिट जाता है।</p>
+  <h3>5. साझा करना और रेटिंग</h3>
+  <p><em>साझा करें</em> बटन आपके स्कोर वाला टेक्स्ट क्लिपबोर्ड पर कॉपी करता है ताकि आप उसे कहीं भी चिपका सकें; हमें कुछ नहीं भेजा जाता। <em>रेट करें</em> बटन Google Play पर ऐप का पेज खोलता है।</p>
+  <h3>6. इन-ऐप खरीदारी</h3>
+  <p>अभी ऐप कुछ नहीं बेचता। यदि यह बदलता है, तो भुगतान केवल Google Play से होंगे, हमें आपकी भुगतान जानकारी नहीं मिलेगी, और यह नीति अपडेट की जाएगी।</p>
+  <h3>7. Android अनुमतियाँ</h3>
+  <ul><li><strong>इंटरनेट</strong>: विज्ञापन और सहमति फ़ॉर्म लोड करने के लिए।</li><li><strong>कंपन</strong>: टैप और टक्कर पर छोटे कंपन के लिए।</li></ul>
+  <h3>8. बच्चे</h3>
+  <p>हम किसी का भी व्यक्तिगत डेटा एकत्र नहीं करते, बच्चों का भी नहीं। विज्ञापन Google AdMob से आते हैं और Google की विज्ञापन नीतियों का पालन करते हैं।</p>
+  <h3>9. बदलाव</h3>
+  <p>हम यह नीति अपडेट कर सकते हैं। ऊपर की तारीख हमेशा नवीनतम संस्करण बताती है।</p>
+  <h3>10. संपर्क</h3>
+  <p>गोपनीयता संबंधी प्रश्न: <span class="mail">marcosvcavalheirojr@gmail.com</span></p>
+  <p class="top"><a href="#top">↑</a></p>
+</article>
+<article id="id" lang="id">
+  <h2>Kebijakan Privasi</h2>
+  <p class="updated">Terakhir diperbarui: 26 September 2026</p>
+  <p>Kebijakan ini menjelaskan bagaimana game <strong>Balloon Adventure</strong> ("Aplikasi"), yang dikembangkan oleh Marcos Valdecir Cavalheiro Junior ("kami"), menangani informasi pemain. Singkatnya: kami tidak mengumpulkan data pribadi. Iklan berasal dari Google AdMob, yang dapat mengumpulkan beberapa data perangkat seperti dijelaskan di bawah.</p>
+  <h3>1. Data pribadi</h3>
+  <p>Kami tidak meminta pendaftaran atau login, dan tidak mengumpulkan, menyimpan, atau membagikan nama, email, telepon, kontak, foto, atau lokasi Anda.</p>
+  <h3>2. Iklan (Google AdMob)</h3>
+  <p>Aplikasi menampilkan iklan dari <strong>Google AdMob</strong>. Untuk menampilkan dan mengukur iklan serta mencegah penipuan, SDK AdMob dapat mengumpulkan:</p>
+  <ul><li>ID iklan perangkat;</li><li>alamat IP dan perkiraan lokasi darinya (negara atau wilayah);</li><li>informasi teknis perangkat (model, sistem, bahasa);</li><li>interaksi dengan iklan (tayangan dan ketukan).</li></ul>
+  <p>Data ini ditangani Google sesuai <a href="https://policies.google.com/privacy" rel="noopener">Kebijakan Privasi Google</a> dan <a href="https://policies.google.com/technologies/partner-sites" rel="noopener">kebijakan data mitra</a>. Anda dapat mereset atau menghapus ID iklan di Setelan Android › Google › Iklan.</p>
+  <h3>3. Persetujuan</h3>
+  <p>Jika Anda berada di Wilayah Ekonomi Eropa, Inggris, atau Swiss, sebelum iklan apa pun Aplikasi menampilkan formulir persetujuan Google (User Messaging Platform, UMP), tempat Anda memilih apakah mengizinkan iklan yang dipersonalisasi. Jika menolak, iklan tetap tampil tetapi tidak dipersonalisasi.</p>
+  <p>Anda dapat meninjau pilihan ini kapan saja di <em>Pengaturan › Opsi privasi</em>. Saat pertama dibuka, Aplikasi juga menampilkan pemberitahuan singkat dengan tautan ke halaman ini; pemberitahuan itu hanya informatif dan tidak menggantikan formulir Google.</p>
+  <h3>4. Data di perangkat Anda</h3>
+  <p>Agar game berjalan, kami hanya menyimpan di perangkat Anda: rekor dan skor terakhir, koin, makhluk dan dunia yang ditemukan di album, misi harian dan rentetan hari bermain, balon yang terbuka, pengaturan (musik, suara, bahasa) dan konfirmasi pemberitahuan privasi. Tidak ada yang dikirim ke kami, dan semuanya terhapus saat Aplikasi dicopot atau datanya dihapus di setelan Android.</p>
+  <h3>5. Berbagi dan menilai</h3>
+  <p>Tombol <em>Bagikan</em> menyalin teks berisi skor Anda ke papan klip agar bisa ditempel di mana saja; tidak ada yang dikirim ke kami. Tombol <em>Nilai</em> membuka halaman Aplikasi di Google Play.</p>
+  <h3>6. Pembelian dalam aplikasi</h3>
+  <p>Saat ini Aplikasi tidak menjual apa pun. Jika berubah, pembayaran hanya melalui Google Play, kami tidak menerima data pembayaran Anda, dan kebijakan ini akan diperbarui.</p>
+  <h3>7. Izin Android</h3>
+  <ul><li><strong>Internet</strong>: untuk memuat iklan dan formulir persetujuan.</li><li><strong>Getar</strong>: untuk getaran singkat saat mengetuk dan menabrak.</li></ul>
+  <h3>8. Anak-anak</h3>
+  <p>Kami tidak mengumpulkan data pribadi siapa pun, termasuk anak-anak. Iklan berasal dari Google AdMob dan mengikuti kebijakan iklan Google.</p>
+  <h3>9. Perubahan</h3>
+  <p>Kami dapat memperbarui kebijakan ini. Tanggal di atas selalu menunjukkan versi terbaru.</p>
+  <h3>10. Kontak</h3>
+  <p>Pertanyaan privasi: <span class="mail">marcosvcavalheirojr@gmail.com</span></p>
+  <p class="top"><a href="#top">↑</a></p>
+</article>
+<article id="ru" lang="ru">
+  <h2>Политика конфиденциальности</h2>
+  <p class="updated">Последнее обновление: 26 сентября 2026 г.</p>
+  <p>Эта политика объясняет, как игра <strong>Balloon Adventure</strong> («Приложение»), разработанная Marcos Valdecir Cavalheiro Junior («мы»), обращается с информацией игроков. Кратко: мы не собираем персональные данные. Реклама поступает от Google AdMob, который может собирать некоторые данные устройства, как описано ниже.</p>
+  <h3>1. Персональные данные</h3>
+  <p>Мы не требуем регистрации или входа и не собираем, не храним и не передаём ваше имя, email, телефон, контакты, фото или местоположение.</p>
+  <h3>2. Реклама (Google AdMob)</h3>
+  <p>Приложение показывает рекламу <strong>Google AdMob</strong>. Для показа и оценки рекламы и защиты от мошенничества SDK AdMob может собирать:</p>
+  <ul><li>рекламный идентификатор устройства;</li><li>IP-адрес и примерное местоположение по нему (страна или регион);</li><li>технические данные устройства (модель, система, язык);</li><li>взаимодействия с рекламой (показы и нажатия).</li></ul>
+  <p>Эти данные обрабатывает Google согласно <a href="https://policies.google.com/privacy" rel="noopener">Политикой конфиденциальности Google</a> и <a href="https://policies.google.com/technologies/partner-sites" rel="noopener">правилами для партнёров</a>. Рекламный идентификатор можно сбросить или удалить в Настройках Android › Google › Реклама.</p>
+  <h3>3. Согласие</h3>
+  <p>Если вы находитесь в Европейской экономической зоне, Великобритании или Швейцарии, до любой рекламы Приложение показывает форму согласия Google (User Messaging Platform, UMP), где вы выбираете, разрешать ли персонализированную рекламу. При отказе реклама остаётся, но без персонализации.</p>
+  <p>Изменить выбор можно в любой момент в разделе <em>Настройки › Параметры конфиденциальности</em>. При первом запуске Приложение также показывает короткое уведомление со ссылкой на эту страницу; оно носит только информационный характер и не заменяет форму Google.</p>
+  <h3>4. Что хранится на устройстве</h3>
+  <p>Для работы игры мы храним только на вашем устройстве: рекорд и последние результаты, монеты, найденных в альбоме существ и миры, ежедневные задания и серию дней, открытые шары, настройки (музыка, звук, язык) и подтверждение уведомления о конфиденциальности. Ничего из этого нам не отправляется, и всё удаляется при удалении Приложения или очистке его данных в настройках Android.</p>
+  <h3>5. Поделиться и оценить</h3>
+  <p>Кнопка <em>Поделиться</em> копирует в буфер обмена текст с вашим результатом, чтобы вы вставили его куда угодно; нам ничего не отправляется. Кнопка <em>Оценить</em> открывает страницу Приложения в Google Play.</p>
+  <h3>6. Покупки в приложении</h3>
+  <p>Сейчас Приложение ничего не продаёт. Если это изменится, оплата будет только через Google Play, мы не получим ваши платёжные данные, а эта политика будет обновлена.</p>
+  <h3>7. Разрешения Android</h3>
+  <ul><li><strong>Интернет</strong>: для загрузки рекламы и формы согласия.</li><li><strong>Вибрация</strong>: для короткой вибрации при касании и столкновении.</li></ul>
+  <h3>8. Дети</h3>
+  <p>Мы ни у кого не собираем персональные данные, в том числе у детей. Реклама поступает от Google AdMob и подчиняется рекламным правилам Google.</p>
+  <h3>9. Изменения</h3>
+  <p>Мы можем обновлять эту политику. Дата вверху всегда указывает последнюю версию.</p>
+  <h3>10. Контакты</h3>
+  <p>Вопросы о конфиденциальности: <span class="mail">marcosvcavalheirojr@gmail.com</span></p>
+  <p class="top"><a href="#top">↑</a></p>
+</article>
+<article id="fr" lang="fr">
+  <h2>Politique de confidentialité</h2>
+  <p class="updated">Dernière mise à jour : 26 septembre 2026</p>
+  <p>Cette politique explique comment le jeu <strong>Balloon Adventure</strong> (l'« Application »), développé par Marcos Valdecir Cavalheiro Junior (« nous »), traite les informations des joueurs. En bref : nous ne collectons pas de données personnelles. Les publicités viennent de Google AdMob, qui peut collecter certaines données de l'appareil, comme décrit ci-dessous.</p>
+  <h3>1. Données personnelles</h3>
+  <p>Nous ne demandons ni inscription ni connexion, et nous ne collectons, ne stockons ni ne partageons vos nom, e-mail, téléphone, contacts, photos ou position.</p>
+  <h3>2. Publicité (Google AdMob)</h3>
+  <p>L'Application affiche des publicités <strong>Google AdMob</strong>. Pour diffuser et mesurer les publicités et prévenir la fraude, le SDK AdMob peut collecter :</p>
+  <ul><li>l'identifiant publicitaire de l'appareil ;</li><li>l'adresse IP et la position approximative qui en découle (pays ou région) ;</li><li>des informations techniques sur l'appareil (modèle, système, langue) ;</li><li>les interactions avec les publicités (affichages et touches).</li></ul>
+  <p>Ces données sont traitées par Google selon les <a href="https://policies.google.com/privacy" rel="noopener">règles de confidentialité de Google</a> et ses <a href="https://policies.google.com/technologies/partner-sites" rel="noopener">règles relatives aux partenaires</a>. Vous pouvez réinitialiser ou supprimer votre identifiant publicitaire dans Paramètres Android › Google › Annonces.</p>
+  <h3>3. Consentement</h3>
+  <p>Si vous êtes dans l'Espace économique européen, au Royaume-Uni ou en Suisse, avant toute publicité l'Application affiche le formulaire de consentement de Google (User Messaging Platform, UMP), où vous choisissez d'accepter ou non les publicités personnalisées. En cas de refus, les publicités restent, mais sans personnalisation.</p>
+  <p>Vous pouvez revoir ce choix à tout moment dans <em>Réglages › Options de confidentialité</em>. Au premier lancement, l'Application affiche aussi un court avis avec le lien vers cette page ; cet avis est seulement informatif et ne remplace pas le formulaire de Google.</p>
+  <h3>4. Données sur votre appareil</h3>
+  <p>Pour que le jeu fonctionne, nous conservons uniquement sur votre appareil : record et derniers scores, pièces, créatures et mondes découverts dans l'album, missions quotidiennes et série de jours joués, ballons débloqués, réglages (musique, sons, langue) et la confirmation de l'avis de confidentialité. Rien de cela ne nous est envoyé, et tout est effacé si vous désinstallez l'Application ou effacez ses données dans les paramètres Android.</p>
+  <h3>5. Partager et noter</h3>
+  <p>Le bouton <em>Partager</em> copie dans le presse-papiers un texte avec votre score, à coller où vous voulez ; rien ne nous est envoyé. Le bouton <em>Noter</em> ouvre la page de l'Application sur Google Play.</p>
+  <h3>6. Achats intégrés</h3>
+  <p>Pour l'instant, l'Application ne vend rien. Si cela change, les paiements passeront uniquement par Google Play, nous ne recevrons pas vos données de paiement et cette politique sera mise à jour.</p>
+  <h3>7. Autorisations Android</h3>
+  <ul><li><strong>Internet</strong> : pour charger les publicités et le formulaire de consentement.</li><li><strong>Vibreur</strong> : pour de courtes vibrations au toucher et en cas de collision.</li></ul>
+  <h3>8. Enfants</h3>
+  <p>Nous ne collectons de données personnelles sur personne, y compris les enfants. Les publicités viennent de Google AdMob et suivent les règles publicitaires de Google.</p>
+  <h3>9. Modifications</h3>
+  <p>Nous pouvons mettre à jour cette politique. La date en haut indique toujours la version la plus récente.</p>
+  <h3>10. Contact</h3>
+  <p>Questions de confidentialité : <span class="mail">marcosvcavalheirojr@gmail.com</span></p>
+  <p class="top"><a href="#top">↑</a></p>
+</article>
+</main>
 
-  <h2>2. Anúncios (Google AdMob)</h2>
-  <p>O app exibe anúncios por meio do Google AdMob. O AdMob pode coletar dados de acordo com a <a href="https://policies.google.com/privacy" rel="noopener">Política de Privacidade do Google</a>. O consentimento é solicitado antes da exibição de qualquer anúncio personalizado, em conformidade com o GDPR (UE) e a LGPD (Brasil).</p>
+<footer>© 2026 Balloon Adventure · Marcos Valdecir Cavalheiro Junior</footer>
 
-  <h2>3. Compras in-app</h2>
-  <p>O app oferece a opção de remover anúncios via compra única. Nenhum dado de pagamento é processado pelo app — toda transação é gerenciada pela Google Play Store.</p>
-
-  <h2>4. Permissões</h2>
-  <ul>
-    <li><strong>INTERNET</strong>: necessária para carregar e exibir anúncios (Google AdMob).</li>
-    <li><strong>VIBRATE</strong>: feedback tátil ao tocar na tela durante o jogo. Nenhum dado é coletado.</li>
-  </ul>
-
-  <h2>5. Crianças</h2>
-  <p>O app não coleta dados de nenhum usuário, incluindo crianças menores de 13 anos. Os anúncios são configurados como não direcionados a crianças.</p>
-
-  <h2>6. Contato</h2>
-  <p>Dúvidas: <a href="mailto:marcosvcavalheirojr@gmail.com">marcosvcavalheirojr@gmail.com</a></p>
-  </section>
-
-  <hr>
-
-  <!-- ── ENGLISH ── -->
-  <section id="en">
-  <h2>English</h2>
-  <p><strong>Last updated:</strong> July 2, 2026</p>
-
-  <h2>1. Data collected</h2>
-  <p>Balloon Adventure does <strong>not collect personally identifiable information</strong>. The only data stored is local game progress (high score, skin preferences), saved exclusively on the device via <code>user://save.cfg</code>.</p>
-
-  <h2>2. Advertising (Google AdMob)</h2>
-  <p>The app displays ads via Google AdMob. AdMob may collect data in accordance with <a href="https://policies.google.com/privacy" rel="noopener">Google's Privacy Policy</a>. Consent is requested before any personalized ad is shown, in compliance with GDPR (EU).</p>
-
-  <h2>3. In-app purchases</h2>
-  <p>The app offers a one-time purchase to remove ads permanently. No payment data is processed by the app — all transactions are managed by the Google Play Store.</p>
-
-  <h2>4. Permissions</h2>
-  <ul>
-    <li><strong>INTERNET</strong>: required to load and display ads (Google AdMob).</li>
-    <li><strong>VIBRATE</strong>: light haptic feedback when tapping the screen. No data is collected.</li>
-  </ul>
-
-  <h2>5. Children</h2>
-  <p>The app does not collect data from any user, including children under 13. Ads are configured as non-child-directed.</p>
-
-  <h2>6. Contact</h2>
-  <p>Questions: <a href="mailto:marcosvcavalheirojr@gmail.com">marcosvcavalheirojr@gmail.com</a></p>
-  </section>
-
-  <hr>
-
-  <!-- ── ESPAÑOL ── -->
-  <section id="es">
-  <h2>Español</h2>
-  <p><strong>Última actualización:</strong> 2 de julio de 2026</p>
-
-  <h2>1. Datos recopilados</h2>
-  <p>Balloon Adventure <strong>no recopila datos personales identificables</strong>. El único dato almacenado es el progreso local del jugador (puntuación máxima, preferencias de skin), guardado exclusivamente en el dispositivo.</p>
-
-  <h2>2. Publicidad (Google AdMob)</h2>
-  <p>La app muestra anuncios a través de Google AdMob. AdMob puede recopilar datos según la <a href="https://policies.google.com/privacy" rel="noopener">Política de privacidad de Google</a>. Se solicita consentimiento antes de mostrar cualquier anuncio personalizado, en conformidad con el GDPR (UE).</p>
-
-  <h2>3. Compras in-app</h2>
-  <p>La app ofrece la opción de eliminar anuncios mediante una compra única. Ningún dato de pago es procesado por la app — todas las transacciones son gestionadas por Google Play Store.</p>
-
-  <h2>4. Permisos</h2>
-  <ul>
-    <li><strong>INTERNET</strong>: necesaria para cargar y mostrar anuncios (Google AdMob).</li>
-    <li><strong>VIBRATE</strong>: vibración táctil al tocar la pantalla. No se recopilan datos.</li>
-  </ul>
-
-  <h2>5. Niños</h2>
-  <p>La app no recopila datos de ningún usuario, incluidos menores de 13 años. Los anuncios están configurados como no dirigidos a niños.</p>
-
-  <h2>6. Contacto</h2>
-  <p>Preguntas: <a href="mailto:marcosvcavalheirojr@gmail.com">marcosvcavalheirojr@gmail.com</a></p>
-  </section>
-
-  <hr>
-
-  <!-- ── FRANÇAIS ── -->
-  <section id="fr">
-  <h2>Français</h2>
-  <p><strong>Dernière mise à jour :</strong> 2 juillet 2026</p>
-
-  <h2>1. Données collectées</h2>
-  <p>Balloon Adventure <strong>ne collecte aucune information personnelle identifiable</strong>. Seule la progression locale du jeu (meilleur score, préférences de skin) est sauvegardée sur l'appareil.</p>
-
-  <h2>2. Publicité (Google AdMob)</h2>
-  <p>L'app affiche des publicités via Google AdMob. AdMob peut collecter des données conformément à la <a href="https://policies.google.com/privacy" rel="noopener">Politique de confidentialité de Google</a>. Le consentement est demandé avant tout affichage de publicité personnalisée, conformément au RGPD (UE).</p>
-
-  <h2>3. Achats in-app</h2>
-  <p>L'app propose une option pour supprimer les publicités via un achat unique. Aucune donnée de paiement n'est traitée par l'app — toutes les transactions sont gérées par le Google Play Store.</p>
-
-  <h2>4. Autorisations</h2>
-  <ul>
-    <li><strong>INTERNET</strong> : nécessaire pour charger et afficher les publicités (Google AdMob).</li>
-    <li><strong>VIBRATE</strong> : retour haptique léger lors des touches à l'écran. Aucune donnée collectée.</li>
-  </ul>
-
-  <h2>5. Enfants</h2>
-  <p>L'app ne collecte pas de données d'utilisateurs, y compris les enfants de moins de 13 ans. Les publicités sont configurées comme non destinées aux enfants.</p>
-
-  <h2>6. Contact</h2>
-  <p>Questions : <a href="mailto:marcosvcavalheirojr@gmail.com">marcosvcavalheirojr@gmail.com</a></p>
-  </section>
-
-  <hr>
-
-  <!-- ── РУССКИЙ ── -->
-  <section id="ru">
-  <h2>Русский</h2>
-  <p><strong>Последнее обновление:</strong> 2 июля 2026 г.</p>
-
-  <h2>1. Собираемые данные</h2>
-  <p>Balloon Adventure <strong>не собирает персональные данные</strong>. Единственная сохраняемая информация — локальный прогресс игры (лучший счёт, предпочтения скинов), хранящийся исключительно на устройстве.</p>
-
-  <h2>2. Реклама (Google AdMob)</h2>
-  <p>Приложение показывает рекламу через Google AdMob. AdMob может собирать данные в соответствии с <a href="https://policies.google.com/privacy" rel="noopener">Политикой конфиденциальности Google</a>. Согласие запрашивается перед показом персонализированной рекламы согласно GDPR (ЕС).</p>
-
-  <h2>3. Покупки в приложении</h2>
-  <p>В будущих версиях может появиться возможность отключить рекламу разовой покупкой. Данные об оплате не обрабатываются приложением — все транзакции выполняются через Google Play Store.</p>
-
-  <h2>4. Разрешения</h2>
-  <ul>
-    <li><strong>INTERNET</strong>: требуется для загрузки и показа рекламы (Google AdMob).</li>
-    <li><strong>VIBRATE</strong>: лёгкая тактильная обратная связь при касании экрана. Данные не собираются.</li>
-  </ul>
-
-  <h2>5. Дети</h2>
-  <p>Приложение не собирает данные ни от каких пользователей, включая детей до 13 лет. Реклама настроена как не предназначенная для детей.</p>
-
-  <h2>6. Контакт</h2>
-  <p>Вопросы: <a href="mailto:marcosvcavalheirojr@gmail.com">marcosvcavalheirojr@gmail.com</a></p>
-  </section>
-
-  <hr>
-
-  <!-- ── BAHASA INDONESIA ── -->
-  <section id="id">
-  <h2>Bahasa Indonesia</h2>
-  <p><strong>Terakhir diperbarui:</strong> 2 Juli 2026</p>
-
-  <h2>1. Data yang dikumpulkan</h2>
-  <p>Balloon Adventure <strong>tidak mengumpulkan informasi identitas pribadi</strong>. Satu-satunya data yang disimpan adalah kemajuan game lokal (skor tertinggi, preferensi skin), disimpan hanya di perangkat.</p>
-
-  <h2>2. Iklan (Google AdMob)</h2>
-  <p>App menampilkan iklan melalui Google AdMob. AdMob dapat mengumpulkan data sesuai <a href="https://policies.google.com/privacy" rel="noopener">Kebijakan Privasi Google</a>. Persetujuan diminta sebelum iklan yang dipersonalisasi ditampilkan, sesuai GDPR (UE).</p>
-
-  <h2>3. Pembelian dalam app</h2>
-  <p>Versi mendatang mungkin menawarkan opsi untuk menghapus iklan melalui pembelian sekali. Tidak ada data pembayaran yang diproses oleh app — semua transaksi dikelola oleh Google Play Store.</p>
-
-  <h2>4. Izin</h2>
-  <ul>
-    <li><strong>INTERNET</strong>: diperlukan untuk memuat dan menampilkan iklan (Google AdMob).</li>
-    <li><strong>VIBRATE</strong>: umpan balik haptic saat menyentuh layar. Tidak ada data yang dikumpulkan.</li>
-  </ul>
-
-  <h2>5. Anak-anak</h2>
-  <p>App tidak mengumpulkan data dari pengguna mana pun, termasuk anak-anak di bawah 13 tahun. Iklan dikonfigurasi sebagai tidak diarahkan kepada anak-anak.</p>
-
-  <h2>6. Kontak</h2>
-  <p>Pertanyaan: <a href="mailto:marcosvcavalheirojr@gmail.com">marcosvcavalheirojr@gmail.com</a></p>
-  </section>
-
-  <hr>
-
-  <!-- ── हिन्दी ── -->
-  <section id="hi">
-  <h2>हिन्दी</h2>
-  <p><strong>अंतिम अपडेट:</strong> 2 जुलाई 2026</p>
-
-  <h2>1. एकत्रित डेटा</h2>
-  <p>Balloon Adventure <strong>कोई भी व्यक्तिगत पहचान योग्य जानकारी एकत्र नहीं करता</strong>। केवल स्थानीय गेम प्रगति (उच्च स्कोर, स्किन प्राथमिकताएं) डिवाइस पर सहेजी जाती है।</p>
-
-  <h2>2. विज्ञापन (Google AdMob)</h2>
-  <p>ऐप Google AdMob के माध्यम से विज्ञापन दिखाता है। AdMob <a href="https://policies.google.com/privacy" rel="noopener">Google की गोपनीयता नीति</a> के अनुसार डेटा एकत्र कर सकता है। GDPR (EU) के अनुपालन में किसी भी व्यक्तिगत विज्ञापन से पहले सहमति मांगी जाती है।</p>
-
-  <h2>3. इन-ऐप खरीदारी</h2>
-  <p>भविष्य के संस्करणों में एकमुश्त खरीद के माध्यम से विज्ञापन हटाने का विकल्प हो सकता है। कोई भी भुगतान डेटा ऐप द्वारा प्रोसेस नहीं किया जाता — सभी लेनदेन Google Play Store द्वारा प्रबंधित होते हैं।</p>
-
-  <h2>4. अनुमतियां</h2>
-  <ul>
-    <li><strong>INTERNET</strong>: विज्ञापन लोड करने और दिखाने के लिए आवश्यक (Google AdMob)।</li>
-    <li><strong>VIBRATE</strong>: स्क्रीन छूने पर हल्की स्पर्श प्रतिक्रिया। कोई डेटा एकत्र नहीं।</li>
-  </ul>
-
-  <h2>5. बच्चे</h2>
-  <p>ऐप किसी भी उपयोगकर्ता से डेटा एकत्र नहीं करता, जिसमें 13 वर्ष से कम आयु के बच्चे भी शामिल हैं। विज्ञापन बच्चों के लिए निर्देशित नहीं हैं।</p>
-
-  <h2>6. संपर्क</h2>
-  <p>प्रश्न: <a href="mailto:marcosvcavalheirojr@gmail.com">marcosvcavalheirojr@gmail.com</a></p>
-  </section>
-
-  <footer>Balloon Adventure · mvcavalheirojr · v1.9</footer>
 </body>
 </html>
